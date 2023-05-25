@@ -1,0 +1,35 @@
+<h4>{{data}}</h4>
+<div class="first container">
+    <form class="bg-primary container mt-3 border border-success border-2 text-light formbor" >
+        <div class="text-center p-2 mt-2">
+            <h3 class="text-center text-white mt-3">SIGN UP</h3>
+
+            </div>
+
+        <div class="text-center p-2 mt-1 ">
+            <img src="https://i.postimg.cc/Z5m31kSB/woman-login-into-banking-app-5194430-4341049.png" alt="" class="img1">
+
+        </div>
+
+        <div class="p-2 mt-1">
+            <label for="">ACCOUNT NUMBER</label>
+            <input type="text" (change)="acnochange($event)" class="form-control" [placeholder]="pldata">
+        </div>
+        <div class="p-2 mt-1">
+            <label for="">PASSWORD</label>
+
+            <input #psw type="password" class="form-control" placeholder=" enter password">
+        </div>
+        <div class="p-2 mt-1 text-center">
+            <!-- <button class="text-white bg-success  loginbut">LOGIN</button> -->
+            <button (click)="login(psw)" type="button" class="btn btn-success">LOGIN</button>
+
+        </div>
+        <div class="text-center p-2 mt-1">
+
+            <a class="text-center text-white mt-2" href="register">create account ?</a>
+            <!-- router-link -->
+        </div>
+
+    </form>
+</div>
