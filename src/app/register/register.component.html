@@ -10,25 +10,25 @@
             jpg
         </div>
         <div class="p-2 mt-1">
-            <input type="text" class="form-control" placeholder="enter your name">
+            <input [(ngModel)]="accno" type="text" id="input1" name="inputvalue" class="form-control" placeholder="enter your name">
         </div>
 
 
         <div class="p-2 mt-1">
-            <input type="text" class="form-control" placeholder="enter account no">
+            <input [(ngModel)]="uname" type="text" id="input2" name="inputvalue2" class="form-control" placeholder="enter account no">
         </div>
         <div class="p-2 mt-1">
 
-            <input type="password" class="form-control" placeholder=" enter password">
+            <input [(ngModel)]="passw" type="password" id="input3" name="inputvalue3" class="form-control" placeholder=" enter password">
         </div>
         <div class="p-2 mt-1">
 
-            <input type="password" class="form-control" placeholder="confirm your password">
+            <input [(ngModel)]="cpassw" type="password" id="input4" name="inputvalue4" class="form-control" placeholder="confirm your password">
         </div>
 
         <div class="p-2 mt-1 text-center">
             <!-- <button class="text-white bg-success  loginbut">REGISTER</button> -->
-            <button type="button" class="btn btn-success">REGISTER</button>
+            <button type="submit" (click)="register()" class="btn btn-success">REGISTER</button>
 
         </div>
 
